@@ -1,0 +1,28 @@
+{
+    "segmentation": {
+        "config_path": ".",
+        "label_path": "glim_segmentation/labels/labels.txt",
+        "model_path": "glim_segmentation/model/yolo26n-seg-trt.onnx",
+        "rgbd_topic": "realsense2_camera_msgs/msg/RGBD",
+        "camera_info_topic": "/camera/color/camera_info",
+        "T_sensor_camera": [
+            0.0,
+            0.068,
+            -0.111,
+            0.0,
+            -0.169182,
+            0.0,
+            0.985556
+        ],
+        "T_camera_sensor": [
+            0.03758,
+            -0.068,
+            0.10464,
+            0.0,
+            0.169182,
+            0.0,
+            0.985556
+        ],
+        "mask_threshold": 0.5
+    }
+}

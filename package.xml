@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>glim_segmentation</name>
+  <version>0.0.0</version>
+  <description>Segmentation module for GLIM</description>
+  <maintainer email="a.m.chirita.1@student.rug.nl">a.m.chirita</maintainer>
+  <license>GPLv3</license>
+
+  <buildtool_depend condition="$ROS_VERSION == 1">catkin</buildtool_depend>
+  <buildtool_depend condition="$ROS_VERSION == 2">ament_cmake</buildtool_depend>
+
+  <depend>glim</depend>
+  <depend>libeigen3-dev</depend>
+  <depend>libgtsam-dev</depend>
+  <depend>pcl_ros</depend>
+  <depend>cv_bridge</depend>
+  <depend>sensor_msgs</depend>
+
+  <build_depend>iridescence</build_depend>
+  <build_depend>tensorrt_yolo</build_depend>
+
+
+  <export>
+    <build_type condition="$ROS_VERSION == 2">ament_cmake</build_type>
+  </export>
+</package>
